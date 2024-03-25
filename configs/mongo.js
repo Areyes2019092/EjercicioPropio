@@ -13,10 +13,10 @@ export const ConexionBaseDatos = async() => {
     //maxPool cantidad maxima de conexiones simultaneas
         await mongoose.connect(process.env.URI_MONGO,  {
             serverSelectionTimeoutMS: 5000,
-            maxPoolSize: 40,
+            maxPoolSize: 50,
         });
     }catch(error){
-        throw new Error(error);
+        throw new Error( "Error al conectarse a la base de datos" ,error);
     }
 
 };

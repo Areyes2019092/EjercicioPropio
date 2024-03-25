@@ -1,0 +1,166 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Users",
+    "dateExported": "2024-03-24T01:44:39.644Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d9249272-d1b1-4151-b107-10fb0ee3b9a9",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8080/ejercicio/v1/usuario",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-22T23:24:05.080Z",
+            "modified": "2024-03-24T01:25:19.761Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"JoseJose\",\n  \"contrasena\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "036e194a-ca39-4710-8ee3-123c0f32148d",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "ObtenerUsuarios",
+            "url": "http://localhost:8080/ejercicio/v1/usuario/listado",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-03-23T00:50:19.925Z",
+            "modified": "2024-03-23T00:50:51.019Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "927105ef-eea5-4339-8fef-a5af284f2cdf",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "ObtenerNombre",
+            "url": "http://localhost:8080/ejercicio/v1/usuario/listadoNombre",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2024-03-23T11:38:34.177Z",
+            "modified": "2024-03-23T11:38:52.735Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a4bd0662-3a6c-4026-adec-2775e9bbdc26",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:8080/ejercicio/v1/usuario",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-22T23:24:05.081Z",
+            "modified": "2024-03-23T11:41:29.339Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\" : \"Jason xd\",\n  \"edad\" : \"78\",\n  \"usuario\" : \"Jasonxd\",\n  \"correo\": \"jason@gmail.gt\",\n  \"contrasena\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5bab8215-6c2f-4b7e-b6a6-c18868721706",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "editName",
+            "url": "http://localhost:8080/ejercicio/v1/usuario",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-22T23:24:05.082Z",
+            "modified": "2024-03-23T11:42:21.395Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWZlYmZlOTFiZWYwZTQ3MzJiNGYwMjUiLCJpYXQiOjE3MTExOTQxMDAsImV4cCI6MTcxMTI2NjEwMH0.a8Ly4U8N8vh2S0M3YoJc038Fdrp1f4L-Gia5JCemzH0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\" : \"Bryan Cojones\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3f62495e-9587-4411-ba50-493ede598a44",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "editPassword",
+            "url": "http://localhost:8080/ejercicio/v1/usuario/contrasena",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-22T23:24:05.083Z",
+            "modified": "2024-03-24T01:25:36.612Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWZlMmEyZDRlYzExNmY1NzAyNWZmNzYiLCJpYXQiOjE3MTEyNDM1MTksImV4cCI6MTcxMTMxNTUxOX0.sYp_hAme0Vhb3_ObI2Oj5LbVT8qiOw6g-skNQm9sNWs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"contrasena1\" : \"1234567\",\n  \"contrasena2\" : \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2f7be7df-fd6e-4123-b76a-60f954eed030",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:8080/ejercicio/v1/usuario/eliminar",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-22T23:24:05.084Z",
+            "modified": "2024-03-23T12:10:20.877Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWZlYmZlOTFiZWYwZTQ3MzJiNGYwMjUiLCJpYXQiOjE3MTExOTQ4NjEsImV4cCI6MTcxMTI2Njg2MX0.uHyfbuTf4KV_LvqR1vhIGseLijhXYAEzIMBm_Q3J15M"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"contrasena\" : \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1ba1f747-4640-42fe-80d0-da82b98de807",
+            "colId": "adf4f945-491a-424c-ba8f-5c8cfd15013d",
+            "containerId": "",
+            "name": "history",
+            "url": "http://localhost:8080/shop/v1/cart",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-22T23:24:05.085Z",
+            "modified": "2024-03-22T23:24:05.085Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZTJiYjE4OTk0MWNmNGY4OTkyMTMiLCJpYXQiOjE3MTAxMjAwOTAsImV4cCI6MTcxMDEyMzY5MH0.DWkMeYODA-tiinrhLQ6i6H_kmZKT33cPaENBmzQNL-E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

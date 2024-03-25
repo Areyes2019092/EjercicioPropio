@@ -8,7 +8,7 @@ export const generarToken = (uid = "") => {
             payload,
             process.env.LLAVE,
             {
-                expiresIn: '20h'
+                expiresIn: '120h'
             },
             (errores, token) =>{
                 errores ? (console.log(errores), reject(`El token no se pudo generar`) ): resolve(token);

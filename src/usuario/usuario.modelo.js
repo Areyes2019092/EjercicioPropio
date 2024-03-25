@@ -21,7 +21,7 @@ const UsuarioModelo = mongoose.Schema({
         type: String,
         required: [ true, 'La contra es obligatorio' ]
     },
-    role:{
+    rol:{
         type: String,
         default: 'Cliente'
     },
